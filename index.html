@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEAT SIGNAL — Nightlife, desire, money, culture</title>
+<meta name="description" content="HEAT SIGNAL is an after-hours digital magazine about nightlife, desire, money, people and internet culture.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top">HEAT SIGNAL</a>
+  <nav>
+    <a href="#tonight">TONIGHT</a>
+    <a href="#stories">STORIES</a>
+    <a href="#afterdark">AFTERDARK</a>
+    <a href="#join">JOIN</a>
+  </nav>
+  <button id="pulseBtn" class="pulse-btn" aria-expanded="false">LIVE 01:36</button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="assets/hero.png" alt="Late-night editorial scene" class="hero-img">
+  <div class="hero-scrim"></div>
+  <div class="issue-stamp">VOL. 001<br>WASHINGTON / NEW YORK</div>
+  <div class="hero-copy">
+    <p class="kicker">MONEY / DESIRE / NIGHT / PEOPLE</p>
+    <h1>THE NIGHT<br><em>KNOWS</em><br>MORE.</h1>
+    <p class="dek">A digital magazine for people who like interesting rooms, attractive trouble, strange money, and staying out a little too late.</p>
+    <a class="arrow-link" href="#stories">ENTER THE ISSUE →</a>
+  </div>
+  <div class="hero-caption">AFTER HOURS, BEFORE THE EXCUSES.</div>
+</section>
+
+<section id="tonight" class="ticker-wrap">
+  <div class="ticker-label">TONIGHT</div>
+  <div class="ticker" aria-label="Current editorial signals">
+    <span>WHO'S AT THE TABLE</span><i>•</i><span>THE $18M SIDE HUSTLE</span><i>•</i><span>DC AFTER MIDNIGHT</span><i>•</i><span>THE GIRL EVERYONE FOLLOWS</span><i>•</i><span>PRIVATE DINING ROOMS WORTH BOOKING</span><i>•</i><span>WHAT'S WORTH YOUR ATTENTION</span>
+  </div>
+</section>
+
+<section id="stories" class="spread spread-dark">
+  <div class="spread-number">01</div>
+  <div class="spread-copy">
+    <p class="kicker">MONEY</p>
+    <h2>HE MADE MORE<br>BUYING THE BAR<br>THAN DRINKING IN IT.</h2>
+    <p>A look at the people quietly buying the places everyone else spends money in.</p>
+    <a href="#join" class="arrow-link">READ THE STORY →</a>
+  </div>
+  <figure class="spread-media tilt-left">
+    <img src="assets/money.png" alt="Late-night business editorial">
+    <figcaption>PRIVATE TAB / MONEY AFTER MIDNIGHT</figcaption>
+  </figure>
+</section>
+
+<section class="interlude">
+  <div class="bigline">BEAUTIFUL PEOPLE.<br><span>UGLY MARGINS.</span></div>
+  <div class="smallnote">Culture looks different when you follow the money.</div>
+</section>
+
+<section class="spread spread-light reverse">
+  <div class="spread-number">02</div>
+  <figure class="spread-media tilt-right">
+    <img src="assets/portrait.png" alt="Editorial portrait">
+    <figcaption>OFF CAMERA / NO PUBLICIST PRESENT</figcaption>
+  </figure>
+  <div class="spread-copy">
+    <p class="kicker">PEOPLE</p>
+    <h2>SHE'S NOT<br>YOUR<br>ALGORITHM.</h2>
+    <p>Creators, performers, founders, hosts and beautiful internet anomalies — photographed and interviewed like people worth knowing.</p>
+    <a href="#join" class="arrow-link dark-link">MEET HER →</a>
+  </div>
+</section>
+
+<section id="afterdark" class="afterdark">
+  <img src="assets/afterdark.png" alt="Afterdark nightlife editorial" class="afterdark-bg">
+  <div class="afterdark-overlay"></div>
+  <div class="afterdark-copy">
+    <p class="kicker">FRIDAY NIGHT EDITION</p>
+    <h2>AFTERDARK</h2>
+    <p>One woman. One room. One strange internet story. One place worth going. One thing money can't quite explain.</p>
+    <a href="#join" class="arrow-link">GET FRIDAY NIGHT →</a>
+  </div>
+</section>
+
+<section class="grid-zone">
+  <article class="story-card story-card-wide">
+    <img src="assets/night.png" alt="Nightlife scene">
+    <div class="card-copy"><span>NIGHT</span><h3>THE ROOM EVERYONE PRETENDS THEY FOUND FIRST.</h3></div>
+  </article>
+  <article class="text-card oxblood"><span>DESIRE</span><h3>WHY ATTENTION GETS MORE EXPENSIVE AFTER MIDNIGHT.</h3><p>Sex appeal, status and the strange economics of being wanted.</p></article>
+  <article class="text-card black"><span>THE LIST</span><h3>7 THINGS WORTH LEAVING THE HOUSE FOR.</h3><p>Food. Rooms. Music. People. One bad decision.</p></article>
+</section>
+
+<section id="join" class="join">
+  <div class="join-left">
+    <div class="join-mark">HS</div>
+    <p class="kicker">THE EMAIL</p>
+    <h2>GET THE<br>GOOD PART.</h2>
+  </div>
+  <form class="join-form" onsubmit="event.preventDefault(); this.classList.add('done'); this.querySelector('button').textContent='YOU’RE IN';">
+    <label for="email">EMAIL ADDRESS</label>
+    <div class="fieldrow"><input id="email" type="email" required placeholder="you@somewhere.com"><button type="submit">JOIN →</button></div>
+    <p>No onboarding funnel. No 47-message sequence. Just the issue.</p>
+  </form>
+</section>
+</main>
+
+<aside id="pulse" class="pulse" aria-hidden="true">
+  <button id="pulseClose" class="pulse-close" aria-label="Close">×</button>
+  <div class="pulse-title">HOUSE PULSE</div>
+  <div class="pulse-item"><time>01:36</time><p>Georgetown is still awake.</p></div>
+  <div class="pulse-item"><time>00:52</time><p>Someone just paid too much for a table. We respect the commitment.</p></div>
+  <div class="pulse-item"><time>23:41</time><p>Private dining rooms are having a moment again.</p></div>
+  <div class="pulse-item"><time>22:18</time><p>The most interesting business story tonight isn't in business media.</p></div>
+</aside>
+
+<footer><span>HEAT SIGNAL © 2026</span><span>WASHINGTON / NEW YORK / AFTER HOURS</span></footer>
+<script src="site.js"></script>
+</body></html>
